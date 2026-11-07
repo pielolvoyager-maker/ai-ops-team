@@ -223,7 +223,7 @@ img, svg { display: block; }
 @keyframes tickIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: none; } }
 @media (min-width: 980px) { .team-mini, .ticker { display: none; } }
 
-.chat-body { position: relative; height: clamp(270px, 42vh, 380px); overflow-y: auto; overscroll-behavior: contain; padding: 16px 14px 18px; scrollbar-width: thin; scrollbar-color: var(--panel-3) transparent; }
+.chat-body { position: relative; height: clamp(260px, 38vh, 360px); overflow-y: auto; overscroll-behavior: contain; padding: 16px 14px 18px; scrollbar-width: thin; scrollbar-color: var(--panel-3) transparent; }
 @media (min-width: 980px) { .chat-body { height: auto; flex: 1 1 0; min-height: 380px; } }
 .chat-log { display: flex; flex-direction: column; gap: 6px; }
 .msg { display: flex; flex-direction: column; max-width: 86%; animation: pop .3s ease-out both; }
@@ -283,7 +283,7 @@ img, svg { display: block; }
 }
 .choice:hover { background: rgba(109, 93, 252, 0.2); border-color: rgba(129, 115, 255, 0.85); }
 .choice:active { transform: scale(.99); }
-.choice[dir="rtl"] { align-items: flex-end; text-align: right; font-family: var(--arabic); font-size: 15.5px; }
+.choice[dir="rtl"] { text-align: right; font-family: var(--arabic); font-size: 15.5px; }
 .choice-gloss { color: var(--muted); font-family: var(--font); font-size: 12px; font-style: italic; font-weight: 400; }
 .choice-mgr { border-color: var(--amber-line); background: var(--amber-soft); }
 .choice-mgr:hover { background: rgba(255, 181, 71, 0.2); border-color: rgba(255, 181, 71, 0.8); }

@@ -87,7 +87,7 @@
       options: [
         { label: "Be honest: it's Nova's assistant, and a real coach runs every call.", rule: "Asked if it's a bot: be honest. It's Nova's assistant, and a real coach runs every call.", reply: "r_bot_honest", then: "continue" },
         { label: "Offer a human: a team member takes over this chat.", rule: "Asked if it's a bot: offer a human and hand the chat to a teammate.", reply: "r_bot_human", then: "human" },
-        { label: "Tell him it's a real person.", blocked: "Blocked by safety: agents never pretend to be human." }
+        { label: "Tell him it's a real person.", blocked: "Agents never pretend to be human." }
       ]
     },
     guarantee: {
@@ -96,7 +96,7 @@
       options: [
         { label: "No guarantees. Results depend on the work. Offer to show real student results on the call.", rule: "Asked for a guarantee: never promise income. Results depend on the work, and the call shows real student results.", reply: "r_g_honest", then: "continue" },
         { label: "Hand this lead to me.", rule: "Asked for a guarantee: hand the lead to a human.", reply: "r_g_human", then: "human" },
-        { label: "Promise he'll make his money back.", blocked: "Blocked by safety: agents never promise results." }
+        { label: "Promise he'll make his money back.", blocked: "Agents never promise results." }
       ]
     }
   };
@@ -188,6 +188,13 @@
     }
     return arr;
   }
+  /* Animation frame with a timer fallback, so counters and the day run never stall. */
+  function nextFrame(cb) {
+    let done = false;
+    const go = (t) => { if (done) return; done = true; cb(typeof t === "number" ? t : performance.now()); };
+    requestAnimationFrame(go);
+    setTimeout(() => go(performance.now()), 60);
+  }
   function button(label, cls, onClick) {
     const b = el("button", cls, label);
     b.type = "button";
@@ -277,7 +284,7 @@
   function scheduleRender() {
     if (rafPending) return;
     rafPending = true;
-    requestAnimationFrame(renderStats);
+    nextFrame(renderStats);
   }
   function renderStats() {
     rafPending = false;
@@ -766,9 +773,9 @@
           if (o.blocked) {
             b.disabled = true;
             b.classList.add("is-blocked");
-            const note = el("p", "mgr-blocked", o.blocked);
+            const note = el("p", "mgr-blocked", "Blocked by the safety rules. " + o.blocked + " Pick another answer.");
             b.insertAdjacentElement("afterend", note);
-            ev("SAFETY", "Rejected the answer \"" + o.label + "\". " + o.blocked.replace("Blocked by safety: ", ""), "skip");
+            ev("SAFETY", "Rejected \"" + o.label.replace(/\.$/, "") + "\". " + o.blocked, "skip");
             return;
           }
           resolve(o);
@@ -904,8 +911,8 @@
     const at = (t, fn) => { if (t != null && t <= DAY_END) plan.push({ t: t, s: seq++, fn: fn }); };
     const ri = (a, b) => a + Math.floor(rnd() * (b - a + 1));
     const booked = { Sara: new Set(), Omar: new Set() };
+    const calls = [];
     let turn = 0;
-    let callNo = 0;
 
     function pickSlot(t) {
       for (let h = Math.max(11, Math.ceil((t + 135) / 60)); h <= 21; h++) {
@@ -966,11 +973,11 @@
         return;
       }
       at(slot.t - 120, () => { bump("messages"); ev("WHATSAPP", "Reminder sent to " + lead.h + ": call at " + slot.label, "info"); ibSet(lead, "Reminder sent for " + slot.label, "Booked"); });
-      callNo += 1;
-      const noShow = callNo === 3;
+      const info = { t: slot.t, noShow: false };
+      calls.push(info);
       at(slot.t, () => {
         C.calls += 1;
-        if (noShow) {
+        if (info.noShow) {
           bump("messages");
           ev("CHECKUP", lead.h + " missed the " + slot.label + " call. Rebook message sent", "skip");
           ibSet(lead, "Missed the call, rebook sent", "No-show");
@@ -1020,7 +1027,6 @@
       const E = DAY_TOPICS[topic];
       at(t, () => {
         D.esc += 1;
-        setStatusLater(owner);
         ev(owner, lead.h + E.pause, "esc");
         mgrMsg(owner, lead.h + E.ask);
         ibSet(lead, "Waiting on the manager", "Asking");
@@ -1036,7 +1042,6 @@
       });
       return t;
     }
-    function setStatusLater() { /* status pulses come from the feed events */ }
 
     for (let i = 0; i < DECK.length; i++) {
       const story = deck[i];
@@ -1102,6 +1107,9 @@
           break;
       }
     }
+    /* One realistic no-show: the fourth call of the day, followed up by CHECKUP. */
+    const daytime = calls.filter((c) => c.t <= DAY_END).sort((a, b) => a.t - b.t);
+    if (daytime.length >= 4) daytime[3].noShow = true;
     plan.sort((a, b) => a.t - b.t || a.s - b.s);
     return plan;
   }
@@ -1177,7 +1185,7 @@
     day = { plan: plan, i: 0, sim: DAY_START, last: performance.now(), tok: S.token, rows: new Map() };
     ev("LABEL", "Day started. Six agents online, claim board empty", "label");
     scrollToDemo();
-    requestAnimationFrame(dayFrame);
+    nextFrame(dayFrame);
   }
 
   function dayFrame(now) {
@@ -1198,19 +1206,19 @@
     renderClock();
     updateProgress();
     if (day.i >= day.plan.length && day.sim >= DAY_END) { finishDay(); return; }
-    requestAnimationFrame(dayFrame);
+    nextFrame(dayFrame);
   }
 
   function finishDay() {
     day = null;
     S.clock = DAY_END;
     renderClock();
+    ev("LABEL", "Day closed. Live numbers saved for the team", "book");
     AGENTS.forEach((a) => {
       const u = agentUI[a.id];
       clearTimeout(u.timer);
       setStatus(a.id, "done", u.n + " actions today");
     });
-    ev("LABEL", "Day closed. Live numbers saved for the team", "book");
     const replyRate = D.leads ? Math.round((100 * C.replies) / D.leads) : 0;
     const showRate = C.calls ? Math.round((100 * C.shows) / C.calls) + "%" : "Pending";
     const sum = el("div", "day-sum");
