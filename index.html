@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI Ops Team | AI agents that run sales and operations</title>
+<meta name="description" content="Six role-based AI agents that answer every lead, qualify like a top salesperson, book calls into your closers' calendars and send the reminders. An interactive prototype by Bilal Houssein.">
+<meta name="author" content="Bilal Houssein">
+<meta name="theme-color" content="#060a13">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://pielolvoyager-maker.github.io/ai-ops-team/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI Ops Team">
+<meta property="og:url" content="https://pielolvoyager-maker.github.io/ai-ops-team/">
+<meta property="og:title" content="AI Ops Team: AI agents that work like a full sales and operations department">
+<meta property="og:description" content="Watch six AI agents answer, qualify, book and remind leads in real time. An interactive prototype of a system that runs every day in a real business.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AI Ops Team: AI agents that work like a full sales and operations department">
+<meta name="twitter:description" content="Watch six AI agents answer, qualify, book and remind leads in real time. An interactive prototype by Bilal Houssein.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b1220'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%233cefab'/%3E%3Cg fill='%233cefab' fill-opacity='.75'%3E%3Ccircle cx='50' cy='32' r='4.5'/%3E%3Ccircle cx='41' cy='47.6' r='4.5'/%3E%3Ccircle cx='23' cy='47.6' r='4.5'/%3E%3Ccircle cx='14' cy='32' r='4.5'/%3E%3Ccircle cx='23' cy='16.4' r='4.5'/%3E%3Ccircle cx='41' cy='16.4' r='4.5'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#demo">Skip to the demo</a>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="AI Ops Team, back to top">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#0f1828"/><circle cx="32" cy="32" r="7" fill="#3cefab"/><g fill="#3cefab" fill-opacity=".75"><circle cx="50" cy="32" r="4.5"/><circle cx="41" cy="47.6" r="4.5"/><circle cx="23" cy="47.6" r="4.5"/><circle cx="14" cy="32" r="4.5"/><circle cx="23" cy="16.4" r="4.5"/><circle cx="41" cy="16.4" r="4.5"/></g></svg>
+      <span>AI Ops Team</span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#demo">Demo</a>
+      <a href="#how">How it works</a>
+      <a href="#results">Results</a>
+      <a href="#safety">Safety</a>
+    </nav>
+    <a class="btn btn-primary btn-sm nav-cta" href="#demo">Try the demo</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span>Running every day in a real business</p>
+        <h1 id="hero-title"><span class="hero-name">AI Ops Team</span>AI agents that work like a full sales and operations department.</h1>
+        <p class="hero-sub">Six agents answer every lead, qualify like a top salesperson, book calls into your closers' calendars and send the reminders. All inside the tools your team already uses.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" href="#demo">
+            Watch the team work
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#how">How it works</a>
+        </div>
+        <p class="byline">Built by <strong>Bilal Houssein</strong></p>
+      </div>
+
+      <aside class="hero-card panel" aria-label="Results from one live shift">
+        <div class="hc-head">
+          <span class="pill pill-live"><span class="live-dot" aria-hidden="true"></span>Live deployment</span>
+          <span class="hc-sub">One shift</span>
+        </div>
+        <div class="hc-stats">
+          <div><span class="hc-num" data-to="537">537</span><span class="hc-label">messages sent</span></div>
+          <div><span class="hc-num" data-to="195">195</span><span class="hc-label">leads handled</span></div>
+          <div><span class="hc-num" data-to="118">118</span><span class="hc-label">leads replied</span></div>
+          <div class="hc-hot"><span class="hc-num" data-to="7">7</span><span class="hc-label">calls booked</span></div>
+        </div>
+        <ul class="hc-team" aria-label="The six agents">
+          <li><span class="dot" aria-hidden="true"></span>COLD</li>
+          <li><span class="dot" aria-hidden="true"></span>RESPOND</li>
+          <li><span class="dot" aria-hidden="true"></span>BACKUP</li>
+          <li><span class="dot" aria-hidden="true"></span>WHATSAPP</li>
+          <li><span class="dot" aria-hidden="true"></span>LABEL</li>
+          <li><span class="dot" aria-hidden="true"></span>CHECKUP</li>
+        </ul>
+        <p class="hc-foot">Measured on one live shift in an online education business.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section id="demo" class="section demo" aria-labelledby="demo-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Interactive demo</p>
+        <h2 id="demo-title">Watch the team work</h2>
+        <p class="section-sub">You are the lead. Tap a reply and watch six agents handle you in real time. Nova Academy is a fictional online course business.</p>
+      </div>
+
+      <div class="demo-bar">
+        <div class="paths" aria-label="Endings to try">
+          <span class="paths-label">Try all three:</span>
+          <span class="path" data-path="booked"><span class="path-i" aria-hidden="true"></span>Book a call</span>
+          <span class="path" data-path="budget"><span class="path-i" aria-hidden="true"></span>Say it's too expensive</span>
+          <span class="path" data-path="manager"><span class="path-i" aria-hidden="true"></span>Ask if it's a bot</span>
+        </div>
+        <div class="demo-tools">
+          <div class="seg" role="group" aria-label="Conversation language">
+            <button type="button" class="seg-btn is-on" data-lang="en" aria-pressed="true">EN</button>
+            <button type="button" class="seg-btn" data-lang="ar" aria-pressed="false" lang="ar">عربي</button>
+          </div>
+          <button type="button" class="btn btn-ghost btn-sm" id="resetBtn">Reset</button>
+          <button type="button" class="btn btn-primary btn-sm" id="dayBtn">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4v16l13-8z"/></svg>
+            <span>Run a full day</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="demo-grid" id="demoGrid">
+        <div class="panel chat" id="chatPanel">
+          <div class="chat-head">
+            <div class="chat-id">
+              <span class="avatar" aria-hidden="true">N</span>
+              <div class="chat-who">
+                <strong>Nova Academy</strong>
+                <span class="chat-sub" id="chatSub">Instagram DM · you are @karim.creates</span>
+              </div>
+            </div>
+            <span class="clock" id="clock" aria-label="Simulated time">2:31 PM</span>
+          </div>
+          <div class="team-mini" id="teamMini" aria-hidden="true"></div>
+          <div class="ticker" id="ticker" aria-hidden="true"><span class="tk-text">The team is standing by.</span></div>
+          <div class="chat-body" id="chatBody">
+            <div class="chat-log" id="chatLog" role="log" aria-live="polite" aria-label="Conversation"></div>
+            <div class="inbox" id="inbox" hidden></div>
+          </div>
+          <div class="chat-foot" id="chatFoot">
+            <p class="choices-label" id="choicesLabel">Ready when you are</p>
+            <div class="choices" id="choices">
+              <button type="button" class="btn btn-primary start-btn" id="startBtn">Start the conversation</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="board" aria-label="Team board">
+          <div class="agents" id="agents"></div>
+          <div class="board-lower">
+            <div class="panel feed-panel">
+              <div class="panel-head">
+                <h3>Live feed</h3>
+                <span class="pill" id="feedMode">Demo lead</span>
+              </div>
+              <ol class="feed" id="feed" aria-label="Agent activity">
+                <li class="feed-empty">Agent activity shows up here as the team works.</li>
+              </ol>
+            </div>
+            <div class="side">
+              <div class="panel">
+                <div class="panel-head">
+                  <h3>Claim board</h3>
+                  <span class="panel-note" id="claimsNote">One lead, one owner</span>
+                </div>
+                <ul class="claims" id="claims"></ul>
+              </div>
+              <div class="panel">
+                <div class="panel-head">
+                  <h3>Ask the manager</h3>
+                  <span class="panel-note">Team chat</span>
+                </div>
+                <div class="mgr-thread" id="mgrThread"></div>
+                <div class="rules-head">
+                  <h4>Rules every agent follows</h4>
+                  <button type="button" class="link-btn" id="forgetBtn" hidden>Forget new rules</button>
+                </div>
+                <ol class="rules" id="rules"></ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dash" id="dash" aria-label="Live numbers">
+        <div class="stat"><span class="stat-label">Messages</span><span class="stat-val" data-stat="messages">0</span></div>
+        <div class="stat"><span class="stat-label">Replies</span><span class="stat-val" data-stat="replies">0</span></div>
+        <div class="stat"><span class="stat-label">Qualified</span><span class="stat-val" data-stat="qualified">0</span></div>
+        <div class="stat"><span class="stat-label">Booked</span><span class="stat-val" data-stat="booked">0</span></div>
+        <div class="stat"><span class="stat-label">Show rate</span><span class="stat-val na" data-stat="showrate">Pending</span></div>
+      </div>
+      <noscript><p class="noscript">The live demo needs JavaScript. Everything else on this page works without it.</p></noscript>
+    </div>
+  </section>
+
+  <section id="how" class="section" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">How it works</p>
+        <h2 id="how-title">A team, not a chatbot</h2>
+        <p class="section-sub">Each agent has one job, the way a real department splits the work. They share one claim board, one team chat and one set of rules.</p>
+      </div>
+
+      <div class="roles">
+        <article class="role panel">
+          <div class="role-top">
+            <span class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14 21 3"/><path d="m21 3-6.5 18a.55.55 0 0 1-1 0L10 14l-7-3.5a.55.55 0 0 1 0-1Z"/></svg></span>
+            <h3>COLD</h3>
+          </div>
+          <p class="role-line">Opens every conversation</p>
+          <p class="role-text">Sends the first message to every new lead within minutes and re-warms anyone who went quiet.</p>
+        </article>
+        <article class="role panel">
+          <div class="role-top">
+            <span class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 20 1.3-3.9C2 12.7 2.9 8.2 6.4 5.7c3.5-2.5 8.6-2.3 11.8.5 3.3 2.8 3.7 7.3 1 10.5-2.7 3.2-7.6 4.2-11.6 2.3Z"/></svg></span>
+            <h3>RESPOND</h3>
+          </div>
+          <p class="role-line">Answers leads, newest first</p>
+          <p class="role-text">Qualifies like a top salesperson: one question at a time, in the lead's own dialect, with a budget check before any booking.</p>
+        </article>
+        <article class="role panel">
+          <div class="role-top">
+            <span class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8v4l2 2"/><path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5"/></svg></span>
+            <h3>BACKUP</h3>
+          </div>
+          <p class="role-line">Answers the oldest waiting</p>
+          <p class="role-text">Works the queue from the other end, so nobody is left waiting while RESPOND handles the newest replies.</p>
+        </article>
+        <article class="role panel">
+          <div class="role-top">
+            <span class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
+            <h3>WHATSAPP</h3>
+          </div>
+          <p class="role-line">The only agent on WhatsApp</p>
+          <p class="role-text">Sends booking confirmations, call links and reminders. One channel, one owner, one consistent voice.</p>
+        </article>
+        <article class="role panel">
+          <div class="role-top">
+            <span class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6v5.2a2 2 0 0 0 .6 1.4l7.7 7.7a2.4 2.4 0 0 0 3.4 0l5.6-5.6a2.4 2.4 0 0 0 0-3.4L12.6 3.6A2 2 0 0 0 11.2 3H6a3 3 0 0 0-3 3Z"/><circle cx="7.5" cy="7.5" r="1"/></svg></span>
+            <h3>LABEL</h3>
+          </div>
+          <p class="role-line">Tags and counts every lead</p>
+          <p class="role-text">Keeps every lead tagged in the CRM and keeps the live numbers honest, so the team always knows where it stands.</p>
+        </article>
+        <article class="role panel">
+          <div class="role-top">
+            <span class="role-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.5 21H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6"/><path d="M16 3v4M8 3v4M4 11h16"/><path d="m15 19 2 2 4-4"/></svg></span>
+            <h3>CHECKUP</h3>
+          </div>
+          <p class="role-line">Fills the closers' calendars</p>
+          <p class="role-text">Finds free slots, books qualified leads with the right closer, reminds them 2 hours before the call and follows up on no-shows.</p>
+        </article>
+      </div>
+
+      <div class="concepts">
+        <article class="concept panel">
+          <h3>The claim board</h3>
+          <p>Before an agent answers, it claims the lead. One lead, one owner. If a second agent reaches the same lead, it sees the claim and moves on. A customer never gets two answers.</p>
+          <ol class="flow">
+            <li>A lead replies</li>
+            <li>RESPOND claims the lead</li>
+            <li>BACKUP sees the claim and skips</li>
+            <li>One clear answer</li>
+          </ol>
+        </article>
+        <article class="concept panel">
+          <h3>Ask the manager</h3>
+          <p>When an agent is not sure, it does not guess. It asks the manager in a shared team chat. The manager answers once, and that answer becomes a rule every agent follows from then on.</p>
+          <ol class="flow flow-amber">
+            <li>An agent is unsure</li>
+            <li>It asks in the team chat</li>
+            <li>The manager answers once</li>
+            <li>A rule for all six agents</li>
+          </ol>
+        </article>
+        <article class="concept panel">
+          <h3>Sells like your best setter</h3>
+          <ul class="ticks">
+            <li>One question per message, never a wall of text</li>
+            <li>Replies in the lead's own dialect: Gulf or Levantine Arabic, or English</li>
+            <li>A budget check before any booking</li>
+            <li>Always offers the soonest free slot</li>
+            <li>A low-cost first step only when the main program is truly out of reach</li>
+          </ul>
+        </article>
+        <article class="concept panel">
+          <h3>Plugs into the tools you already use</h3>
+          <p>No new software for the team to learn. The agents work inside the channels and systems the business already runs on.</p>
+          <ul class="chips">
+            <li>Instagram DMs</li>
+            <li>WhatsApp</li>
+            <li>CRM pipeline</li>
+            <li>Closers' calendars</li>
+            <li>Slack team chat</li>
+            <li>Zoom calls</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="results" class="section results-section" aria-labelledby="results-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">From the live deployment</p>
+        <h2 id="results-title">One real shift. Real leads.</h2>
+        <p class="section-sub">Measured on one shift of the production system in an online education business. The demo above runs the same playbook with a fictional company.</p>
+      </div>
+      <div class="results">
+        <div class="result panel"><span class="r-num" data-to="537">537</span><span class="r-label">messages sent</span></div>
+        <div class="result panel"><span class="r-num" data-to="195">195</span><span class="r-label">leads handled</span></div>
+        <div class="result panel"><span class="r-num" data-to="118">118</span><span class="r-label">leads replied</span><span class="r-note">61% reply rate</span></div>
+        <div class="result panel result-accent"><span class="r-num" data-to="7">7</span><span class="r-label">calls booked</span><span class="r-note">in a single shift</span></div>
+      </div>
+      <div class="results-cta">
+        <button type="button" class="btn btn-primary" id="dayBtn2">Run a full day in the demo</button>
+        <p class="muted-note">Fast-forwards 50 fictional leads through all six agents at once.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="safety" class="section" aria-labelledby="safety-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Safety</p>
+        <h2 id="safety-title">Clear lines it never crosses</h2>
+        <p class="section-sub">The agents do the repetitive work. People keep every decision that matters.</p>
+      </div>
+      <div class="safety">
+        <article class="rule-card panel">
+          <span class="rc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m5.7 5.7 12.6 12.6"/></svg></span>
+          <h3>Never pays, never signs</h3>
+          <p>Money and contracts always stay with a person.</p>
+        </article>
+        <article class="rule-card panel">
+          <span class="rc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <h3>Never invents facts</h3>
+          <p>No made-up prices, promises or results. If it is not in the playbook, the agent asks the manager.</p>
+        </article>
+        <article class="rule-card panel">
+          <span class="rc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 1 1 8 0v4"/></svg></span>
+          <h3>Never touches a teammate's leads</h3>
+          <p>A lead that belongs to another team member is off limits. The claim board makes that automatic.</p>
+        </article>
+        <article class="rule-card panel">
+          <span class="rc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg></span>
+          <h3>Sensitive cases go to a human</h3>
+          <p>Refunds, complaints and anything personal are handed to a person right away.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-in">
+    <div>
+      <a class="brand" href="#top">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#0f1828"/><circle cx="32" cy="32" r="7" fill="#3cefab"/><g fill="#3cefab" fill-opacity=".75"><circle cx="50" cy="32" r="4.5"/><circle cx="41" cy="47.6" r="4.5"/><circle cx="23" cy="47.6" r="4.5"/><circle cx="14" cy="32" r="4.5"/><circle cx="23" cy="16.4" r="4.5"/><circle cx="41" cy="16.4" r="4.5"/></g></svg>
+        <span>AI Ops Team</span>
+      </a>
+      <p class="footer-note">Prototype. The demo company and leads are fictional. The production system runs daily in a real business.</p>
+    </div>
+    <p class="footer-by">Built by <strong>Bilal Houssein</strong> · 2026</p>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
