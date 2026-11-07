@@ -52,28 +52,28 @@
     c_student: { en: "I'm a university student.", ar: "طالب جامعة." },
     r_goal_retail: { en: "Respect, full time and still building something for yourself. If this works out, how much would you want it to bring you each month?", ar: "احترامي، دوام كامل وتبي تبني شي لنفسك. لو مشى الموضوع، كم تبي يدخل لك بالشهر؟" },
     r_goal_student: { en: "Smart to start early. If this works out, how much would you want it to bring you each month?", ar: "حلو إنك تبدأ من الحين. لو مشى الموضوع، كم تبي يدخل لك بالشهر؟" },
-    c_2k: { en: "Around $2,000 a month on the side.", ar: "حوالي ٢٠٠٠ دولار بالشهر على جنب." },
+    c_2k: { en: "Around $2,000 a month on the side.", ar: "حوالي 2000 دولار بالشهر على جنب." },
     c_live: { en: "Enough to live from it one day.", ar: "شي أقدر أعيش منه يوم من الأيام." },
-    r_pitch1: { en: "That's very doable. In short: we teach you to run ads for local businesses and help you land your first paying clients, with live coaching for 12 weeks.", ar: "هذا وايد ممكن. باختصار: نعلمك تسوي إعلانات للبزنسات المحلية ونساعدك تجيب أول عملاء يدفعون لك، مع كوتشنج مباشر لمدة ١٢ أسبوع." },
-    r_pitch2: { en: "Before I book your call: the program is an investment of about $1,200. If the call shows it's right for you, is that doable?", ar: "قبل لا أحجز لك المكالمة: البرنامج استثمار بحدود ١٢٠٠ دولار. لو طلع مناسب لك في المكالمة، تقدر عليه؟" },
+    r_pitch1: { en: "That's very doable. In short: we teach you to run ads for local businesses and help you land your first paying clients, with live coaching for 12 weeks.", ar: "هذا وايد ممكن. باختصار: نعلمك تسوي إعلانات للبزنسات المحلية ونساعدك تجيب أول عملاء يدفعون لك، مع كوتشنج مباشر لمدة 12 أسبوع." },
+    r_pitch2: { en: "Before I book your call: the program is an investment of about $1,200. If the call shows it's right for you, is that doable?", ar: "قبل لا أحجز لك المكالمة: البرنامج استثمار بحدود 1200 دولار. لو طلع مناسب لك في المكالمة، تقدر عليه؟" },
     c_yes: { en: "Yes, I can do that.", ar: "إيه، أقدر عليه." },
     c_no: { en: "That's too much for me right now.", ar: "والله وايد علي حالياً." },
     c_guar: { en: "Can you guarantee I'll make money?", ar: "تضمنون لي إني بربح؟" },
-    r_slots: { en: "Perfect. Seats are limited, so here's the soonest I have: today at 7:00 PM with Sara, one of our coaches. Or tomorrow at 1:00 PM. Which works?", ar: "ممتاز. المقاعد محدودة، وهذا أقرب موعد عندي: اليوم الساعة ٧ المسا مع سارة، وحدة من الكوتشز عندنا. أو باكر الساعة ١ الظهر. أي واحد يناسبك؟" },
-    c_today: { en: "Today at 7 PM works.", ar: "اليوم الساعة ٧ تمام." },
-    c_tmrw: { en: "Tomorrow at 1 PM, please.", ar: "باكر الساعة ١ لو سمحت." },
-    r_booked_today: { en: "Done! You're booked with Sara today at 7:00 PM. Your Zoom link and a reminder are coming on WhatsApp.", ar: "تم! حجزت لك مع سارة اليوم الساعة ٧ المسا. رابط الزوم والتذكير بيوصلونك على الواتساب." },
-    r_booked_tmrw: { en: "Done! You're booked with Sara tomorrow at 1:00 PM. Your Zoom link and a reminder are coming on WhatsApp.", ar: "تم! حجزت لك مع سارة باكر الساعة ١ الظهر. رابط الزوم والتذكير بيوصلونك على الواتساب." },
-    wa_today: { en: "Hi Karim, you're confirmed with Sara today at 7:00 PM. Here's your Zoom link. See you there!", ar: "هلا كريم، تم تأكيد موعدك مع سارة اليوم الساعة ٧ المسا. هذا رابط الزوم، نشوفك هناك!" },
-    wa_tmrw: { en: "Hi Karim, you're confirmed with Sara tomorrow at 1:00 PM. Here's your Zoom link. See you there!", ar: "هلا كريم، تم تأكيد موعدك مع سارة باكر الساعة ١ الظهر. هذا رابط الزوم، نشوفك هناك!" },
-    r_starter: { en: "Totally fair, thanks for being straight with me. A smaller first step: our Starter Course is $49. It's the same first module the program starts with. Want the link?", ar: "ولا يهمك، مشكور على صراحتك. فيه خطوة أصغر: كورس البداية بـ ٤٩ دولار، وهو نفس أول وحدة يبدأ فيها البرنامج. أرسل لك الرابط؟" },
+    r_slots: { en: "Perfect. Seats are limited, so here's the soonest I have: today at 7:00 PM with Sara, one of our coaches. Or tomorrow at 1:00 PM. Which works?", ar: "ممتاز. المقاعد محدودة، وهذا أقرب موعد عندي: اليوم الساعة 7 المسا مع سارة، وحدة من الكوتشز عندنا. أو باكر الساعة 1 الظهر. أي واحد يناسبك؟" },
+    c_today: { en: "Today at 7 PM works.", ar: "اليوم الساعة 7 تمام." },
+    c_tmrw: { en: "Tomorrow at 1 PM, please.", ar: "باكر الساعة 1 لو سمحت." },
+    r_booked_today: { en: "Done! You're booked with Sara today at 7:00 PM. Your Zoom link and a reminder are coming on WhatsApp.", ar: "تم! حجزت لك مع سارة اليوم الساعة 7 المسا. رابط الزوم والتذكير بيوصلونك على الواتساب." },
+    r_booked_tmrw: { en: "Done! You're booked with Sara tomorrow at 1:00 PM. Your Zoom link and a reminder are coming on WhatsApp.", ar: "تم! حجزت لك مع سارة باكر الساعة 1 الظهر. رابط الزوم والتذكير بيوصلونك على الواتساب." },
+    wa_today: { en: "Hi Karim, you're confirmed with Sara today at 7:00 PM. Here's your Zoom link. See you there!", ar: "هلا كريم، تم تأكيد موعدك مع سارة اليوم الساعة 7 المسا. هذا رابط الزوم، نشوفك هناك!" },
+    wa_tmrw: { en: "Hi Karim, you're confirmed with Sara tomorrow at 1:00 PM. Here's your Zoom link. See you there!", ar: "هلا كريم، تم تأكيد موعدك مع سارة باكر الساعة 1 الظهر. هذا رابط الزوم، نشوفك هناك!" },
+    r_starter: { en: "Totally fair, thanks for being straight with me. A smaller first step: our Starter Course is $49. It's the same first module the program starts with. Want the link?", ar: "ولا يهمك، مشكور على صراحتك. فيه خطوة أصغر: كورس البداية بـ 49 دولار، وهو نفس أول وحدة يبدأ فيها البرنامج. أرسل لك الرابط؟" },
     c_link: { en: "Yes, send me the link.", ar: "إيه، أرسله لي." },
     c_zero: { en: "I can't spend anything right now.", ar: "حالياً ما أقدر أدفع أي شي." },
     r_link: { en: "Here's your link. Start lesson 1 tonight and tell me how it goes. When you're ready for the full program, I'm right here.", ar: "هذا الرابط. ابدأ الدرس الأول الليلة وقول لي شلون كان. ولما تكون جاهز للبرنامج الكامل، أنا موجود." },
     r_free: { en: "No problem at all. Here's the full free class, it's the best place to start. When the time is right, message me and we'll pick it up from there.", ar: "ولا يهمك أبداً. هذا الكلاس المجاني كامل، أحسن مكان تبدأ منه. ولما يجي الوقت المناسب، كلمني ونكمل من هني." },
     r_bot_honest: { en: "Fair question! I'm Nova's assistant, I help the team reply fast. A real coach runs every call. So tell me, what made you want the free class?", ar: "سؤال في محله! أنا المساعد الذكي لفريق نوفا، أساعدهم يردون بسرعة. والمكالمة دايماً مع كوتش حقيقي. قول لي، شو اللي خلاك تبي الكلاس المجاني؟" },
     r_bot_human: { en: "Fair question! Let me bring in someone from the team. They'll reply to you here in a few minutes.", ar: "سؤال في محله! بخلي واحد من الفريق يكلمك. بيرد عليك هني خلال دقايق." },
-    r_g_honest: { en: "Honest answer: nobody can guarantee income, it depends on the work you put in. On the call, Sara can show you real student results so you can judge for yourself. If it's the right fit, is the $1,200 doable?", ar: "بصراحة: محد يقدر يضمن لك دخل، الموضوع يعتمد على شغلك. في المكالمة، سارة بتوريك نتايج طلاب حقيقية وتحكم بنفسك. لو طلع مناسب لك، تقدر على الـ ١٢٠٠ دولار؟" },
+    r_g_honest: { en: "Honest answer: nobody can guarantee income, it depends on the work you put in. On the call, Sara can show you real student results so you can judge for yourself. If it's the right fit, is the $1,200 doable?", ar: "بصراحة: محد يقدر يضمن لك دخل، الموضوع يعتمد على شغلك. في المكالمة، سارة بتوريك نتايج طلاب حقيقية وتحكم بنفسك. لو طلع مناسب لك، تقدر على الـ 1200 دولار؟" },
     r_g_human: { en: "Good question, and it deserves a proper answer. Someone from our team will reply to you here personally in a few minutes.", ar: "سؤال مهم ويستاهل جواب واضح. واحد من فريقنا بيرد عليك هني شخصياً خلال دقايق." }
   };
 
@@ -227,6 +227,17 @@
     u.mini.setAttribute("data-s", s);
     u.status.textContent = STATUS_TEXT[s] || s;
     if (note) u.note.textContent = note;
+    /* In the chat demo a finished agent goes back to idle after a moment, keeping its last action. */
+    clearTimeout(u.decay);
+    if (s === "done" && S.mode === "chat") {
+      u.decay = setTimeout(() => {
+        if (u.card.getAttribute("data-s") === "done") {
+          u.card.setAttribute("data-s", "idle");
+          u.mini.setAttribute("data-s", "idle");
+          u.status.textContent = STATUS_TEXT.idle;
+        }
+      }, 6000);
+    }
   }
   function addCount(id) {
     const u = agentUI[id];
@@ -792,7 +803,7 @@
       const o = learned[topic];
       ev("RESPOND", "Rule #" + ruleNumber(topic) + " applied (taught by you). No need to ask the manager again", "rule");
       await agentSays(tok, "RESPOND", o.reply, "Answered with a saved rule");
-      await afterRule(tok, topic, o.then);
+      await afterRule(tok, topic, o.then, true);
       return;
     }
     setStatus("RESPOND", "asking", "Waiting for the manager");
@@ -814,7 +825,7 @@
     await afterRule(tok, topic, o.then);
   }
 
-  async function afterRule(tok, topic, then) {
+  async function afterRule(tok, topic, then, fromRule) {
     if (then === "human") {
       await sleep(300, tok);
       claim(LEAD, "HUMAN");
@@ -824,7 +835,11 @@
         kicker: "Handed to a human",
         human: true,
         title: "A person takes it from here",
-        points: [
+        points: fromRule ? [
+          "The saved rule answered instantly, no question needed",
+          "The lead went straight to a human teammate",
+          "Agents step back, so the lead never gets two answers"
+        ] : [
           "The agent paused instead of guessing",
           "The manager answered once, in the team chat",
           "Saved as a rule, so next time nobody has to ask"
@@ -842,7 +857,7 @@
     if (n) n.classList.add("done");
   }
 
-  const PATH_NAMES = { booked: "book a call", budget: "say it's too expensive", manager: "ask if it's a bot" };
+  const PATH_NAMES = { booked: "book a call", budget: "say it's too expensive", manager: "ask a tricky question, like whether it's a bot" };
   function endChat(o) {
     const d = el("div", "card-msg card-end" + (o.human ? " is-human" : ""));
     d.appendChild(el("p", "end-kicker", o.kicker));
